@@ -41,14 +41,14 @@
       overflow: hidden;
     }
 
-    /* ✨ Animated Background */
+    /* Animated Background */
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
-    /* ✨ Floating Particles */
+    /*  Floating Particles */
     .particles {
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
@@ -79,7 +79,7 @@
       100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
     }
 
-    /* ✨ Glassmorphism Card */
+    /*  Glassmorphism Card */
     .welcome-card {
       background: var(--putih-glass);
       backdrop-filter: blur(20px);
@@ -222,7 +222,7 @@
       transform: translateY(-1px);
     }
 
-    /* ✨ Secondary Button */
+    /*  Secondary Button */
     .btn-logout {
       background: transparent;
       color: #64748B;
@@ -244,7 +244,7 @@
       transform: translateY(-1px);
     }
 
-    /* ✨ Decorative Elements */
+    /* Decorative Elements */
     .deco-circle {
       position: absolute;
       border-radius: 50%;
@@ -261,7 +261,7 @@
       66% { transform: translate(-15px, 15px) scale(0.95); }
     }
 
-    /* ✨ Stats Row (Optional) */
+    /* Stats Row (Optional) */
     .stats-row {
       display: flex;
       gap: 12px;
@@ -286,7 +286,7 @@
       color: #64748B;
     }
 
-    /* ✨ Footer */
+    /* Footer */
     .footer-note {
       margin-top: 24px;
       font-size: 0.85rem;
@@ -295,7 +295,7 @@
       z-index: 10;
     }
 
-    /* ✨ Responsive */
+    /* Responsive */
     @media (max-width: 576px) {
       .welcome-card { padding: 40px 28px; }
       .welcome-title { font-size: 1.5rem; }
@@ -306,7 +306,7 @@
 </head>
 <body>
 
-  <!-- ✨ Animated Background Particles -->
+  <!-- Animated Background Particles -->
   <div class="particles">
     <div class="particle"></div><div class="particle"></div>
     <div class="particle"></div><div class="particle"></div>
@@ -314,11 +314,11 @@
     <div class="particle"></div>
   </div>
 
-  <!-- ✨ Decorative Floating Shapes -->
+  <!-- Decorative Floating Shapes -->
   <div class="deco-circle deco-1"></div>
   <div class="deco-circle deco-2"></div>
 
-  <!-- ✨ Welcome Card -->
+  <!-- Welcome Card -->
   <div class="welcome-card">
     
     <!-- Animated Icon -->
@@ -378,7 +378,7 @@
       document.getElementById('userName').textContent = displayName;
     }
 
-    // 🚀 Navigate to Portfolio
+    // Navigate to Portfolio
     function enterPortfolio() {
       // Add subtle click animation
       const btn = document.querySelector('.btn-enter');
@@ -388,7 +388,7 @@
       }, 150);
     }
 
-    // 🚪 Logout Function
+    // Logout Function
     function logout() {
       if (confirm('Yakin ingin keluar?')) {
         localStorage.removeItem('user');
@@ -396,7 +396,7 @@
       }
     }
 
-    // ✨ Optional: Animate stats on load
+    // Optional: Animate stats on load
     document.addEventListener('DOMContentLoaded', () => {
       const stats = document.querySelectorAll('.stat-number');
       stats.forEach((stat, i) => {
